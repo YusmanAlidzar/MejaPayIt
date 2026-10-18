@@ -48,51 +48,6 @@
 
 ---
 
-## 🐙 Setup Repository Baru ke GitHub (Manual)
-
-Jika Anda ingin menyimpan project ini ke repository pribadi baru di GitHub Anda:
-
-### 1. Buat Repository di GitHub
-1. Buka [GitHub](https://github.com/new).
-2. Beri nama repository: **`MejaPayIt`**.
-3. Pilih **Private** (atau Public sesuai preferensi).
-4. **JANGAN centang** *"Add a README file"*, *"Add .gitignore"*, atau *"Choose a license"* (karena project lokal sudah memilikinya).
-5. Klik **Create repository**.
-6. Salin URL repository Anda (contoh: `https://github.com/USERNAME/MejaPayIt.git`).
-
-### 2. Hubungkan & Push dari Komputer Lokal
-Buka terminal di folder project `MejaPayIt`, lalu jalankan:
-
-```bash
-# 1. Ubah remote origin ke repository baru Anda
-git remote set-url origin https://github.com/USERNAME/MejaPayIt.git
-
-# 2. Stage seluruh file modifikasi
-git add .
-
-# 3. Commit perubahan awal MejaPayIt
-git commit -m "feat: inisiasi MejaPayIt POS system"
-
-# 4. Pastikan branch utama bernama main
-git branch -M main
-
-# 5. Push ke GitHub repository baru Anda
-git push -u origin main
-```
-
-> **Tips Alternatif**: Jika ingin mulai dengan riwayat commit baru (fresh commit history):
-> ```bash
-> Remove-Item -Recurse -Force .git
-> git init
-> git remote add origin https://github.com/USERNAME/MejaPayIt.git
-> git add .
-> git commit -m "feat: initial commit MejaPayIt"
-> git branch -M main
-> git push -u origin main --force
-> ```
-
----
-
 ## 🚀 Panduan Inisiasi & Setup Awal
 
 ### Persyaratan Sistem
@@ -104,7 +59,7 @@ git push -u origin main
 
 1. **Clone Repository / Buka Folder Project**:
    ```bash
-   git clone https://github.com/USERNAME/MejaPayIt.git
+   git clone https://github.com/YusmanAlidzar/MejaPayIt.git
    cd MejaPayIt
    ```
 
